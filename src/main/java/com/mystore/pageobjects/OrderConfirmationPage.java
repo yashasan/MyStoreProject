@@ -22,7 +22,7 @@ public class OrderConfirmationPage extends BaseClass {
 	private WebElement confirmMessag;
 	
 	public OrderConfirmationPage() {
-		PageFactory.initElements(getDriver(), this);
+		PageFactory.initElements(driver, this);
 	}
 	
 	public String validateConfirmMessage() {

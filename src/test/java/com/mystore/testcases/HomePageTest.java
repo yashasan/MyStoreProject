@@ -33,7 +33,7 @@ public class HomePageTest extends BaseClass {
 	
 	@AfterMethod(groups = {"Smoke","Sanity","Regression"})
 	public void tearDown() {
-		getDriver().quit();
+		driver.quit();
 	}
 	
 	@Test(groups = "Smoke",dataProvider = "credentials", dataProviderClass = DataProviders.class)

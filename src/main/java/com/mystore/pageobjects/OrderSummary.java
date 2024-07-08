@@ -24,11 +24,11 @@ public class OrderSummary extends BaseClass {
 	private WebElement confirmOrderBtn;
 	
 	public OrderSummary() {
-		PageFactory.initElements(getDriver(), this);
+		PageFactory.initElements(driver, this);
 	}
 
 	public OrderConfirmationPage clickOnconfirmOrderBtn() throws Throwable {
-		action.click(getDriver(), confirmOrderBtn);
+		action.click(driver, confirmOrderBtn);
 		return new OrderConfirmationPage();
 	}
 	

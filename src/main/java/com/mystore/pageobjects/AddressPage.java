@@ -22,11 +22,11 @@ public class AddressPage extends BaseClass {
 	private WebElement proceedToCheckOut;
 	
 	public AddressPage() {
-		PageFactory.initElements(getDriver(), this);
+		PageFactory.initElements(driver, this);
 	}
 
 	public ShippingPage clickOnCheckOut() throws Throwable {
-		action.click(getDriver(), proceedToCheckOut);
+		action.click(driver, proceedToCheckOut);
 		return new ShippingPage();
 	}
 	

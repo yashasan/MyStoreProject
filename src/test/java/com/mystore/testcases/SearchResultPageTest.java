@@ -31,7 +31,7 @@ public class SearchResultPageTest extends BaseClass {
 	
 	@AfterMethod(groups = {"Smoke","Sanity","Regression"})
 	public void tearDown() {
-		getDriver().quit();
+		driver.quit();
 	}
 	
 	@Test(groups = "Smoke",dataProvider = "searchProduct", dataProviderClass = DataProviders.class)

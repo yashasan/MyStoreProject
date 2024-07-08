@@ -34,7 +34,7 @@ public class AddToCartPageTest extends BaseClass {
 	
 	@AfterMethod(groups = {"Smoke","Sanity","Regression"})
 	public void tearDown() {
-		getDriver().quit();
+		driver.quit();
 	}
 	
 	@Test(groups = {"Regression","Sanity"}, dataProvider = "getProduct", dataProviderClass = DataProviders.class)

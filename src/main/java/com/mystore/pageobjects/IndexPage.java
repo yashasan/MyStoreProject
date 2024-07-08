@@ -24,28 +24,28 @@ public class IndexPage extends BaseClass {
 	private WebElement searchButton;
 	
 	public IndexPage() {
-		PageFactory.initElements(getDriver(), this);
+		PageFactory.initElements(driver, this);
 	}
 	
 	public LoginPage clickOnSignIn() throws Throwable {
-		action.fluentWait(getDriver(), signInBtn, 10);
-		action.click(getDriver(), signInBtn);
+		action.fluentWait(driver, signInBtn, 10);
+		action.click(driver, signInBtn);
 		return new LoginPage();
 	}
 	
 	public boolean validateLogo() throws Throwable {
-		return action.isDisplayed(getDriver(), myStoreLogo);
+		return action.isDisplayed(driver, myStoreLogo);
 	}
 	
 	public String getMyStoreTitle() {
-		String myStoreTitel=getDriver().getTitle();
+		String myStoreTitel=driver.getTitle();
 		return myStoreTitel;
 	}
 	
 	public SearchResultPage searchProduct(String productName) throws Throwable {
 		action.type(searchProductBox, productName);
-		action.scrollByVisibilityOfElement(getDriver(), searchButton);
-		action.click(getDriver(), searchButton);
+		action.scrollByVisibilityOfElement(driver, searchButton);
+		action.click(driver, searchButton);
 		Thread.sleep(3000);
 		return new SearchResultPage();
 	}

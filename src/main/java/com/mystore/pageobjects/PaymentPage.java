@@ -25,11 +25,11 @@ public class PaymentPage extends BaseClass {
 	private WebElement payByCheckMethod;
 	
 	public PaymentPage() {
-		PageFactory.initElements(getDriver(), this);
+		PageFactory.initElements(driver, this);
 	}
 	
 	public OrderSummary clickOnPaymentMethod() throws Throwable {
-		action.click(getDriver(), bankWireMethod);
+		action.click(driver, bankWireMethod);
 		return new OrderSummary();
 	}
 

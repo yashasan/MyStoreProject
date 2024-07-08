@@ -27,7 +27,7 @@ public class AccountCreationPageTest extends BaseClass {
 	
 	@AfterMethod(groups = {"Smoke","Sanity","Regression"})
 	public void tearDown() {
-		getDriver().quit();
+		driver.quit();
 	}
 	
 	@Test(groups = "Sanity",dataProvider = "email", dataProviderClass = DataProviders.class)

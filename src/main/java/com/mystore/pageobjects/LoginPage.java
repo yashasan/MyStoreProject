@@ -34,24 +34,24 @@ public class LoginPage extends BaseClass {
 	private WebElement createNewAccountBtn;
 	
 	public LoginPage() {
-		PageFactory.initElements(getDriver(), this);
+		PageFactory.initElements(driver, this);
 	}
 	
 	public HomePage login(String uname, String pswd,HomePage homePage) throws Throwable {
-		action.scrollByVisibilityOfElement(getDriver(), userName);
+		action.scrollByVisibilityOfElement(driver, userName);
 		action.type(userName, uname);
 		action.type(password, pswd);
-		action.JSClick(getDriver(), signInBtn);
+		action.JSClick(driver, signInBtn);
 		Thread.sleep(2000);
 		homePage=new HomePage();
 		return homePage;
 	}
 	
 	public AddressPage login(String uname, String pswd,AddressPage addressPage) throws Throwable {
-		action.scrollByVisibilityOfElement(getDriver(), userName);
+		action.scrollByVisibilityOfElement(driver, userName);
 		action.type(userName, uname);
 		action.type(password, pswd);
-		action.click(getDriver(), signInBtn);
+		action.click(driver, signInBtn);
 		Thread.sleep(2000);
 		addressPage=new AddressPage();
 		return addressPage;
@@ -59,7 +59,7 @@ public class LoginPage extends BaseClass {
 	
 	public AccountCreationPage createNewAccount(String newEmail) throws Throwable {
 		action.type(emailForNewAccount, newEmail);
-		action.click(getDriver(), createNewAccountBtn);
+		action.click(driver, createNewAccountBtn);
 		return new AccountCreationPage();
 	}
 	

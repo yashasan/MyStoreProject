@@ -34,7 +34,7 @@ public class AddToCartPage extends BaseClass {
 	private WebElement proceedToCheckOutBtn;
 	
 	public AddToCartPage() {
-		PageFactory.initElements(getDriver(), this);
+		PageFactory.initElements(driver, this);
 	}
 
 	public void enterQuantity(String quantity1) throws Throwable {
@@ -46,17 +46,17 @@ public class AddToCartPage extends BaseClass {
 	}
 	
 	public void clickOnAddToCart() throws Throwable {
-		action.click(getDriver(), addToCartBtn);
+		action.click(driver, addToCartBtn);
 	}
 	
 	public boolean validateAddtoCart() throws Throwable {
-		action.fluentWait(getDriver(), addToCartMessag, 10);
-		return action.isDisplayed(getDriver(), addToCartMessag);
+		action.fluentWait(driver, addToCartMessag, 10);
+		return action.isDisplayed(driver, addToCartMessag);
 	}
 	
 	public OrderPage clickOnCheckOut() throws Throwable {
-		action.fluentWait(getDriver(), proceedToCheckOutBtn, 10);
-		action.JSClick(getDriver(), proceedToCheckOutBtn);
+		action.fluentWait(driver, proceedToCheckOutBtn, 10);
+		action.JSClick(driver, proceedToCheckOutBtn);
 		return new OrderPage();
 	}
 	

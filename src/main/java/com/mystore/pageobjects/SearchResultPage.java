@@ -22,15 +22,15 @@ public class SearchResultPage extends BaseClass {
 	private WebElement productResult;
 	
 	public SearchResultPage() {
-		PageFactory.initElements(getDriver(), this);
+		PageFactory.initElements(driver, this);
 	}
 	
 	public boolean isProductAvailable() throws Throwable {
-		return action.isDisplayed(getDriver(), productResult);
+		return action.isDisplayed(driver, productResult);
 	}
 	
 	public AddToCartPage clickOnProduct() throws Throwable {
-		action.click(getDriver(), productResult);
+		action.click(driver, productResult);
 		return new AddToCartPage();
 	}
 	
