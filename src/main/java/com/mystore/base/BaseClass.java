@@ -57,13 +57,11 @@ public class BaseClass {
 		}
 	}
 
-	
-
 	public void launchApp(String browserName) {
-		//String browserNamee = prop.getProperty("browser");
+		// String browserNamee = prop.getProperty("browser");
 		if (browserName.equalsIgnoreCase("Chrome")) {
 			String basedir = prop.getProperty("basedir");
-			String chromeDriverPath = basedir + "\\drivers\\chromedriver.exe";
+			String chromeDriverPath = basedir+"\\drivers\\chromedriver.exe";
 			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 			// WebDriverManager.chromedriver().setup();
 			// Set Browser to ThreadLocalMap
@@ -71,7 +69,7 @@ public class BaseClass {
 		} else if (browserName.equalsIgnoreCase("IE")) {
 			String basedir = prop.getProperty("basedir");
 			String edgeDriverPath = basedir + "\\drivers\\msedgedriver.exe";
-			System.setProperty("webdriver.chrome.driver", edgeDriverPath);
+			System.setProperty("webdriver.edge.driver", edgeDriverPath);
 			// WebDriverManager.iedriver().setup();
 			// driver.set(new InternetExplorerDriver());
 			driver = new EdgeDriver();

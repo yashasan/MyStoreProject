@@ -21,15 +21,6 @@
           <include name="loadConfig"/>
         </methods>
       </class> <!-- com.mystore.testcases.LoginPageTest -->
-      <class name="com.mystore.testcases.AccountCreationPageTest">
-        <methods>
-          <include name="afterSuite"/>
-          <include name="setup"/>
-          <include name="loadConfig"/>
-          <include name="tearDown"/>
-          <include name="verifyCreateAccountPageTest"/>
-        </methods>
-      </class> <!-- com.mystore.testcases.AccountCreationPageTest -->
       <class name="com.mystore.testcases.AddToCartPageTest">
         <methods>
           <include name="afterSuite"/>
@@ -39,6 +30,15 @@
           <include name="setup"/>
         </methods>
       </class> <!-- com.mystore.testcases.AddToCartPageTest -->
+      <class name="com.mystore.testcases.AccountCreationPageTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="setup"/>
+          <include name="loadConfig"/>
+          <include name="tearDown"/>
+          <include name="verifyCreateAccountPageTest"/>
+        </methods>
+      </class> <!-- com.mystore.testcases.AccountCreationPageTest -->
     </classes>
   </test> <!-- Sanity(failed) -->
 </suite> <!-- Failed suite [Suite] -->
