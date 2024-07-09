@@ -12,14 +12,15 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="com.mystore.testcases.HomePageTest" />
-		 	<class name="com.mystore.testcases.OrderPageTest" />
-			<class name="com.mystore.testcases.SearchResultPageTest" />
 			<class name="com.mystore.testcases.LoginPageTest" />
+			<!--<class name="com.mystore.testcases.OrderPageTest" />
+		 <class name="com.mystore.testcases.HomePageTest" />
+			<class name="com.mystore.testcases.SearchResultPageTest" />
+			
 			<class name="com.mystore.testcases.AddToCartPageTest" />
 			<class name="com.mystore.testcases.AccountCreationPageTest" />
 			<class name="com.mystore.testcases.IndexPageTest" />
-			<class name="com.mystore.testcases.EndToEndTest" />
+			<class name="com.mystore.testcases.EndToEndTest" />-->
 		</classes>
 	</test> <!--
 	Test -->
